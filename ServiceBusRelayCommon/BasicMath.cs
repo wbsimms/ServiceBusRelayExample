@@ -15,7 +15,7 @@ namespace ServiceBusRelayCommon
     [ServiceBehavior(Name = "BasicMath", Namespace = "http://samples.microsoft.com/ServiceModel/Relay/")]
     public class BasicMath : IBasicMath
     {
-        public double PerformOperation(double first, double second, Operation operation)
+        public double PerformOperation(double first, double second, Operation operation = Operation.ADD)
         {
             switch (operation)
             {
